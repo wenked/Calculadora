@@ -1,8 +1,3 @@
-const soma = a => a+b
-const sub = a => a-b
-const mult = a => a*b
-const div = a => a/b
-
 const boxValue = document.getElementById('boxValue')
 const oneButton = document.getElementById('oneButton')
 const twoButton = document.getElementById('twoButton')
