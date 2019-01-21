@@ -7,6 +7,8 @@ const oprMinus = document.getElementById('oprMinus')
 const oprEqual = document.getElementById('oprEqual')
 const oprClear = document.getElementById('oprClear')
 
+
+// GERA OPERAÇÕES
 const clearOpr = () => {
     boxValue.value = ''
 }
@@ -42,12 +44,15 @@ const equalOpr = () => {
     //console.log(result)
 
 }
+
+// GERA NÚMEROS
 const generateNum1 = () => boxValue.value += oneButton.value
 const generateNum2 = () => boxValue.value += twoButton.value
 const generateNum3 = () => boxValue.value += threeButton.value
-const generateNum4 = () => boxValue.value = oneButton.value
-const generateNum5 = () => boxValue.value = oneButton.value
-const generateNum6 = () => boxValue.value = oneButton.value
-const generateNum7 = () => boxValue.value = oneButton.value
-const generateNum8 = () => boxValue.value = oneButton.value
-const generateNum9 = () => boxValue.value = oneButton.value
+const generateNum4 = () => boxValue.value += fourButton.value
+const generateNum5 = () => boxValue.value += fiveButton.value
+const generateNum6 = () => boxValue.value += sixButton.value
+const generateNum7 = () => boxValue.value += sevenButton.value
+const generateNum8 = () => boxValue.value += eightButton.value
+const generateNum9 = () => boxValue.value += nineButton.value
+const generateNum0 = () => boxValue.value += zeroButton.value
