@@ -4,6 +4,8 @@ const twoButton = document.getElementById('twoButton')
 const threeButton = document.getElementById('threeButton')
 const oprPlus = document.getElementById('oprPlus')
 const oprMinus = document.getElementById('oprMinus')
+const oprTimes = document.getElementById('oprTimes')
+const oprDiv = document.getElementById('oprDiv')
 const oprEqual = document.getElementById('oprEqual')
 const oprClear = document.getElementById('oprClear')
 
@@ -23,6 +25,14 @@ const generateOprMinus = () => {
     boxValue.value += oprMinus.value 
     console.log(boxValue.value) 
 }
+
+const generateOprTimes = () =>{
+    boxValue.value += oprTimes.value
+}
+
+const generateOprDiv = () =>{
+    boxValue.value += oprDiv.value
+}
 const equalOpr = () => {
     let result = boxValue.value.split('')
     if(result.includes('+')){
@@ -35,9 +45,11 @@ const equalOpr = () => {
         boxValue.value = result
 
     }else if(result.includes('*')){
-        result = boxValue.value.split('*').map(Number).reduce((acc,value) => acc*value,0)
+        result = boxValue.value.split('*').map(Number).reduce((acc,value) => acc*value)
+        boxValue.value = result
     }else if(result.includes('/')){
-        result = boxValue.value.split('/').map(Number).reduce((acc,value) => acc/value,0)
+        result = boxValue.value.split('/').map(Number).reduce((acc,value) => acc/value)
+        boxValue.value = result
     }
     
     //result = boxValue.value.split('+').map(Number).reduce((acc,value) => acc+value,0)
